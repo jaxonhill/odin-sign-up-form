@@ -1,0 +1,46 @@
+// Importing fonts
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+// Create some custom colors
+$input-gray: hsl(190, 22, 94);
+$label-gray: hsl(0, 0, 0, .70);
+$input-outline-gray: hsl(188, 12, 89);
+$small-heading-gray: hsl(0, 0, 0, .75);
+$button-blue: hsl(190, 73, 63);
+$orange: hsl(27, 91, 66);
+
+// Create mixins
+@mixin heading-font {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 900;
+}
+
+@mixin input-field {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: $input-gray;
+    border: solid 1px $input-outline-gray;
+    -webkit-box-shadow: 10px 10px 25px -5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 10px 10px 25px -5px rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    position: absolute;
+    height: 100vh;
+    width: 60vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0 calc(100vw * .097) 0 49vw;
+}
