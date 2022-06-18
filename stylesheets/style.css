@@ -17,4 +17,22 @@ form {
   flex-direction: column;
   height: 100vh;
   margin: 0 9.7vw 0 49vw;
+}
+
+.top-headings {
+  margin-top: 12vh;
+  display: flex;
+  flex-direction: column;
+}
+.top-headings h1 {
+  font-family: "Catamaran", sans-serif;
+  font-weight: 900;
+  font-size: 87px;
+}
+.top-headings h2 {
+  position: relative;
+  top: -20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  opacity: 0.75;
 }/*# sourceMappingURL=style.css.map */

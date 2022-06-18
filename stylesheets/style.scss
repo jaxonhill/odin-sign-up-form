@@ -14,11 +14,15 @@ $orange: hsl(27, 91, 66);
 @mixin heading-font {
     font-family: 'Catamaran', sans-serif;
     font-weight: 900;
+    font-size: 87px;
+}
+
+@mixin poppins-font {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 @mixin input-field {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
     background-color: $input-gray;
     border: solid 1px $input-outline-gray;
     -webkit-box-shadow: 10px 10px 25px -5px rgba(0, 0, 0, 0.3);
@@ -43,4 +47,21 @@ form {
     flex-direction: column;
     height: 100vh;
     margin: 0 calc(100vw * .097) 0 49vw;
+}
+
+.top-headings {
+    margin-top: calc(100vh * 0.12);
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        @include heading-font();
+    }
+
+    h2 {
+        position: relative;
+        top: -20px;
+        @include poppins-font();
+        opacity: 0.75;
+    }
 }
