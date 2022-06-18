@@ -25,9 +25,6 @@ $orange: hsl(27, 91, 66);
 @mixin input-field {
     background-color: $input-gray;
     border: solid 1px $input-outline-gray;
-    -webkit-box-shadow: 10px 10px 25px -5px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 10px 10px 25px -5px rgba(0, 0, 0, 0.3);
-    box-shadow: 10px 10px 25px -5px rgba(0, 0, 0, 0.3);
 }
 
 * {
@@ -46,6 +43,7 @@ form {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    width: calc(100vw * 0.3917);
     margin: 0 calc(100vw * .097) 0 49vw;
 }
 
@@ -60,8 +58,89 @@ form {
 
     h2 {
         position: relative;
-        top: -20px;
+        top: -15px;
         @include poppins-font();
         opacity: 0.75;
     }
+}
+
+.inputs-section {
+    display: flex;
+    padding-top: 5%;
+    flex-direction: column;
+
+    .names-section {
+        display: flex;
+        gap: 5%;
+        width: 100%;
+
+        .first-name,
+        .last-name {
+            display: flex;
+            flex-direction: column;
+            flex: auto;
+
+            label {
+                padding-left: 17px;
+                @include poppins-font();
+                opacity: .70;
+                font-size: 19px;
+            }
+
+            input {
+                flex: auto;
+                border-radius: 22px;
+            }
+        }
+    }
+
+    .email-section {
+        display: flex;
+        flex-direction: column;
+        padding-top: 3%;
+
+        label {
+            padding-left: 17px;
+            @include poppins-font();
+            opacity: .70;
+            font-size: 19px;
+        }
+
+        input {
+            flex: auto;
+            border-radius: 22px;
+        }
+    }
+
+    .passwords-section {
+        display: flex;
+        padding-top: 3%;
+        gap: 5%;
+        width: 100%;
+
+        .password,
+        .confirm {
+            display: flex;
+            flex-direction: column;
+            flex: auto;
+
+            label {
+                padding-left: 17px;
+                @include poppins-font();
+                opacity: .70;
+                font-size: 19px;
+            }
+
+            input {
+                flex: auto;
+                border-radius: 22px;
+            }
+        }
+
+    }
+}
+
+input {
+    @include input-field();
+    height: calc(100vh * 0.066);
 }

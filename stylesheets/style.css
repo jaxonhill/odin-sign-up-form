@@ -16,6 +16,7 @@ form {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 39.17vw;
   margin: 0 9.7vw 0 49vw;
 }
 
@@ -31,8 +32,85 @@ form {
 }
 .top-headings h2 {
   position: relative;
-  top: -20px;
+  top: -15px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   opacity: 0.75;
+}
+
+.inputs-section {
+  display: flex;
+  padding-top: 5%;
+  flex-direction: column;
+}
+.inputs-section .names-section {
+  display: flex;
+  gap: 5%;
+  width: 100%;
+}
+.inputs-section .names-section .first-name,
+.inputs-section .names-section .last-name {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+}
+.inputs-section .names-section .first-name label,
+.inputs-section .names-section .last-name label {
+  padding-left: 17px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  opacity: 0.7;
+  font-size: 19px;
+}
+.inputs-section .names-section .first-name input,
+.inputs-section .names-section .last-name input {
+  flex: auto;
+  border-radius: 22px;
+}
+.inputs-section .email-section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3%;
+}
+.inputs-section .email-section label {
+  padding-left: 17px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  opacity: 0.7;
+  font-size: 19px;
+}
+.inputs-section .email-section input {
+  flex: auto;
+  border-radius: 22px;
+}
+.inputs-section .passwords-section {
+  display: flex;
+  padding-top: 3%;
+  gap: 5%;
+  width: 100%;
+}
+.inputs-section .passwords-section .password,
+.inputs-section .passwords-section .confirm {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+}
+.inputs-section .passwords-section .password label,
+.inputs-section .passwords-section .confirm label {
+  padding-left: 17px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  opacity: 0.7;
+  font-size: 19px;
+}
+.inputs-section .passwords-section .password input,
+.inputs-section .passwords-section .confirm input {
+  flex: auto;
+  border-radius: 22px;
+}
+
+input {
+  background-color: hsl(190deg, 22%, 94%);
+  border: solid 1px hsl(188deg, 12%, 89%);
+  height: 6.6vh;
 }/*# sourceMappingURL=style.css.map */
