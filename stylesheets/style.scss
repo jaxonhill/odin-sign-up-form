@@ -8,6 +8,7 @@ $label-gray: hsl(0, 0, 0, .70);
 $input-outline-gray: hsl(188, 12, 89);
 $small-heading-gray: hsl(0, 0, 0, .75);
 $button-blue: hsl(190, 73, 63);
+$button-hover: hsl(190, 73, calc(63 * .80));
 $orange: hsl(27, 91, 66);
 
 // Create mixins
@@ -97,6 +98,7 @@ form {
     .email-section {
         display: flex;
         flex-direction: column;
+        width: 100%;
         padding-top: 3%;
 
         label {
@@ -143,4 +145,44 @@ form {
 input {
     @include input-field();
     height: calc(100vh * 0.066);
+    padding-left: 20px;
+    @include poppins-font();
+    font-size: 19px;
+}
+
+.bottom-section {
+    display: flex;
+    padding-top: 8%;
+    flex-direction: column;
+    gap: calc(100vh * 0.019);
+    @include poppins-font();
+
+    button {
+        width: 47%;
+        height: calc(100vh * 0.073);
+        border: none;
+        border-radius: 56px;
+        background-color: $button-blue;
+        color: #fff;
+        font-size: 22px;
+    }
+
+    button:hover {
+        background-color: $button-hover;
+        cursor: pointer;
+    }
+
+    div {
+        padding-left: 17px;
+        font-size: 19px;
+
+        a {
+            text-decoration: none;
+            color: $orange;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
 }

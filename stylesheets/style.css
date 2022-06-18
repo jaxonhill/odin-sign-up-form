@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -25,11 +26,13 @@ form {
   display: flex;
   flex-direction: column;
 }
+
 .top-headings h1 {
   font-family: "Catamaran", sans-serif;
   font-weight: 900;
   font-size: 87px;
 }
+
 .top-headings h2 {
   position: relative;
   top: -15px;
@@ -43,17 +46,20 @@ form {
   padding-top: 5%;
   flex-direction: column;
 }
+
 .inputs-section .names-section {
   display: flex;
   gap: 5%;
   width: 100%;
 }
+
 .inputs-section .names-section .first-name,
 .inputs-section .names-section .last-name {
   display: flex;
   flex-direction: column;
   flex: auto;
 }
+
 .inputs-section .names-section .first-name label,
 .inputs-section .names-section .last-name label {
   padding-left: 17px;
@@ -62,16 +68,20 @@ form {
   opacity: 0.7;
   font-size: 19px;
 }
+
 .inputs-section .names-section .first-name input,
 .inputs-section .names-section .last-name input {
   flex: auto;
   border-radius: 22px;
 }
+
 .inputs-section .email-section {
   display: flex;
   flex-direction: column;
+  width: 100%;
   padding-top: 3%;
 }
+
 .inputs-section .email-section label {
   padding-left: 17px;
   font-family: "Poppins", sans-serif;
@@ -79,22 +89,26 @@ form {
   opacity: 0.7;
   font-size: 19px;
 }
+
 .inputs-section .email-section input {
   flex: auto;
   border-radius: 22px;
 }
+
 .inputs-section .passwords-section {
   display: flex;
   padding-top: 3%;
   gap: 5%;
   width: 100%;
 }
+
 .inputs-section .passwords-section .password,
 .inputs-section .passwords-section .confirm {
   display: flex;
   flex-direction: column;
   flex: auto;
 }
+
 .inputs-section .passwords-section .password label,
 .inputs-section .passwords-section .confirm label {
   padding-left: 17px;
@@ -103,6 +117,7 @@ form {
   opacity: 0.7;
   font-size: 19px;
 }
+
 .inputs-section .passwords-section .password input,
 .inputs-section .passwords-section .confirm input {
   flex: auto;
@@ -113,4 +128,48 @@ input {
   background-color: hsl(190deg, 22%, 94%);
   border: solid 1px hsl(188deg, 12%, 89%);
   height: 6.6vh;
-}/*# sourceMappingURL=style.css.map */
+  padding-left: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.bottom-section {
+  display: flex;
+  padding-top: 8%;
+  flex-direction: column;
+  gap: 1.9vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.bottom-section button {
+  width: 47%;
+  height: 7.3vh;
+  border: none;
+  border-radius: 56px;
+  background-color: hsl(190deg, 73%, 63%);
+  color: #fff;
+  font-size: 22px;
+}
+
+.bottom-section button:hover {
+  background-color: hsl(190deg, 73%, 50.4%);
+  cursor: pointer;
+}
+
+.bottom-section div {
+  padding-left: 17px;
+  font-size: 19px;
+}
+
+.bottom-section div a {
+  text-decoration: none;
+  color: hsl(27deg, 91%, 66%);
+}
+
+.bottom-section div a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */
